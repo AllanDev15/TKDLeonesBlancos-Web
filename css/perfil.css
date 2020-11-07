@@ -1,0 +1,117 @@
+.width-50 {
+  width: 50%;
+}
+.width-33 {
+  width: 33.3333%;
+}
+.width-66 {
+  width: 66.6666%;
+}
+.form-perfil {
+  margin-top: 40px;
+  margin-right: 0px;
+}
+.form-perfil .campo {
+  margin-bottom: 20px;
+  width: auto;
+}
+.form-perfil .flex-start .campo {
+  flex: 0 1 calc(33.3333% - 5px);
+  min-width: 160px;
+  margin-right: 0px;
+}
+.form-perfil .flex-start .campo:last-of-type {
+  margin-right: 0px;
+}
+.form-perfil .label-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+.form-perfil .label-container label {
+  font-size: 13px;
+  position: relative;
+  top: unset;
+  left: unset;
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+}
+.input_perfil {
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 30px 12px 10px;
+  border: none;
+  border-bottom: 1px solid #888;
+}
+.input_perfil:disabled {
+  border-bottom: 1px solid rgba(118, 118, 118, 0.3);
+  color: rgb(120,120,120);
+  background-color: rgba(239, 239, 239, 0.3);
+  opacity: 1;
+}
+
+.input-container i {
+  position: absolute;
+  font-size: 18px;
+  left: unset;
+  right: 10px;
+  margin-top: -9px;
+  top: 50%;
+}
+.input-container select ~ i {
+  right: 20px;
+}
+.nacimiento-alumno .flex-start .campo {
+  min-width: 140px;
+}
+
+.nacimiento-alumno + .flex-start .campo {
+  flex: 0 1 calc(50% - 5px);
+} 
+
+@media(min-width: 768px) {
+  .flex-start {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media(min-width: 1024px) {
+  .form-perfil {
+    margin-right: 30%;
+  }
+  .flex-start {
+    justify-content: flex-start;
+  }
+  .form-perfil .flex-start .campo {
+    flex: 1 1 calc(33.3333%);
+    margin-right: 10px;
+  }
+}
+@media(max-width: 1024px) {
+  .nacimiento-alumno.width-50 {
+    width: 66.6666%;
+  }
+}
+@media(max-width: 920px) {
+  .nacimiento-alumno.width-50 {
+    width: 100%;
+  }
+  .width-50 {
+    width: 66.6666%;
+  }
+}
+@media(max-width: 767px) {
+  .width-66,
+  .width-50,
+  .width-33 {
+    width: 100%;
+  }
+}
+
+input[type=submit]:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
