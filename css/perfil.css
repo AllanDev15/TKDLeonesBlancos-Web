@@ -48,7 +48,7 @@
 }
 .input_perfil:disabled {
   border-bottom: 1px solid rgba(118, 118, 118, 0.3);
-  color: rgb(120,120,120);
+  color: rgb(120, 120, 120);
   background-color: rgba(239, 239, 239, 0.3);
   opacity: 1;
 }
@@ -70,15 +70,15 @@
 
 .nacimiento-alumno + .flex-start .campo {
   flex: 0 1 calc(50% - 5px);
-} 
+}
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .flex-start {
     display: flex;
     justify-content: space-between;
   }
 }
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .form-perfil {
     margin-right: 30%;
   }
@@ -90,12 +90,12 @@
     margin-right: 10px;
   }
 }
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .nacimiento-alumno.width-50 {
     width: 66.6666%;
   }
 }
-@media(max-width: 920px) {
+@media (max-width: 920px) {
   .nacimiento-alumno.width-50 {
     width: 100%;
   }
@@ -103,7 +103,7 @@
     width: 66.6666%;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .width-66,
   .width-50,
   .width-33 {
@@ -111,7 +111,7 @@
   }
 }
 
-input[type=submit]:disabled {
+input[type='submit']:disabled {
   cursor: not-allowed;
   opacity: 0.8;
 }
