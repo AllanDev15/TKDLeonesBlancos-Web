@@ -122,7 +122,7 @@ if($accion === 'update') {
   include '../funciones/connectiondb.php';
 
   try {
-    $stmt = $con->prepare("UPDATE usuarios SET nombre=?, apPaterno=?, apMaterno=?, diaNac=?, mesNac=?, añoNac=?, grado=?, cinta=?, tutor=?, telefono=? WHERE id_usuario=?");
+    $stmt = $con->prepare("UPDATE usuarios SET nombre=?, apPaterno=?, apMaterno=?, diaNac=?, mesNac=?, añoNac=?, grado=?, cinta=?, tutor=?, telefono=?, actualizado=NOW() WHERE id_usuario=?");
     $stmt->bind_param("sssiiissssi", $nombre, $paterno, $materno, $dia, $mes, $año, $grado, $cinta, $tutor, $telefono, $id);
     $stmt->execute();
     if($stmt->affected_rows > 0) {
