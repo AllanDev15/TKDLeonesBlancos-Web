@@ -98,31 +98,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --mainColor: #F0143C;
+  --mainColor: #f0143c;
   /* --darkRed: #A8001F; */
   /* --darkRed: #C91839; */
-  --darkRed: #C41232;
-  --asentColor: #12CAD6;
-  --backgroundColor: #E5EAF0;
-  --darkColor: #0FABBC;
+  --darkRed: #c41232;
+  --asentColor: #12cad6;
+  --backgroundColor: #e5eaf0;
+  --darkColor: #0fabbc;
   --darkColorRGB: 15, 171, 188;
-  --darkGray: #454F59;
+  --darkGray: #454f59;
   --darkGrayRGB: 69, 79, 89;
-  --logoColor: #AE9132;
-  --lightGray: #F5F5F5;
-  --platinum: #E6E6E9;
-  --cultured: #F4F4F6;
+  --logoColor: #ae9132;
+  --lightGray: #f5f5f5;
+  --platinum: #e6e6e9;
+  --cultured: #f4f4f6;
   /* --green: #8FC93A; */
   /* --green: #2B9720; */
   /* --green: #8bc34a; */
   /* --green: #6BBF59; */
-  --green: #5ABF50;
+  --green: #5abf50;
 }
 * {
   text-decoration: none;
   box-sizing: border-box;
 }
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 html {
@@ -131,8 +133,11 @@ html {
 body {
   background-color: var(--backgroundColor);
 }
-h1, h2, h3, h4 {
-  font-family: "Oswald", sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Oswald', sans-serif;
 }
 h1 {
   font-size: 2.5rem;
@@ -142,14 +147,15 @@ h2 {
   margin: 0;
 }
 h3 {
-  font-size: 1.875rem; 
+  font-size: 1.875rem;
   margin: 0;
 }
 h4 {
   font-size: 1.5rem;
   margin: 0;
 }
-ul, li {
+ul,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -160,10 +166,13 @@ p {
   font-size: 16px;
   margin: 0;
 }
-a{
+a {
   font-family: 'Roboto', sans-serif;
 }
-input, label, select, button {
+input,
+label,
+select,
+button {
   font-family: 'Roboto', sans-serif;
 }
 .input:disabled,
@@ -172,7 +181,7 @@ input, label, select, button {
   color: rgb(110, 110, 110);
 }
 div#swal2-content {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 button.swal2-styled.swal2-confirm {
   background-color: var(--darkColor);
@@ -182,11 +191,6 @@ button.swal2-styled.swal2-confirm {
   margin: 0 auto;
   width: auto;
   max-width: 1200px;
-}
-.seccion-perfil {
-  margin: 0 auto;
-  width: auto;
-  max-width: 1700px;
 }
 .contenedor {
   width: 95%;
@@ -198,18 +202,13 @@ button.swal2-styled.swal2-confirm {
   padding: 30px;
   background-color: white;
 }
-.contenedor-perfil {
-  width: 100%;
-  margin: 0 auto;
-  padding: 50px;
-}
 .boton {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 8px;
   border: none;
   font-size: 16px;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   width: auto;
   cursor: pointer;
 }
@@ -224,7 +223,7 @@ button.swal2-styled.swal2-confirm {
 .btn-primary-red {
   background-color: var(--mainColor);
   color: white;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .btn-primary-red:hover {
   background-color: var(--darkRed);
@@ -233,7 +232,7 @@ button.swal2-styled.swal2-confirm {
   border: 1px solid var(--mainColor);
   color: var(--mainColor);
   background-color: transparent;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .btn-secondary-red:hover {
   background-color: var(--mainColor);
@@ -242,12 +241,12 @@ button.swal2-styled.swal2-confirm {
 .btn-primary-blue {
   background-color: var(--darkColor);
   color: white;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .btn-primary-green {
   background-color: var(--green);
   color: white;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .enlace {
   font-size: 1.125rem;
@@ -300,21 +299,20 @@ button.swal2-styled.swal2-confirm {
   }
 }
 
-
 /* Barra de Navegacion */
 
-.contenedor-navegacion {  
+.contenedor-navegacion {
   top: 0;
-  width : 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
   background-color: rgba(69, 79, 89, 1);
   z-index: 1002;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   padding: 0 20px 0 5px;
-  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.50);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .contenedor-navegacion a.logo {
   grid-column: 1 / 2;
@@ -323,13 +321,12 @@ button.swal2-styled.swal2-confirm {
 }
 .logo img {
   width: 4.375rem;
-  transition: width .3s ease-in-out;
+  transition: width 0.3s ease-in-out;
   margin: 0px;
 }
 .sidebar .logo img {
   width: 70px;
 }
-
 
 .navegacion {
   position: fixed;
@@ -344,7 +341,7 @@ button.swal2-styled.swal2-confirm {
   display: block;
   padding: 5px 1.25rem;
   font-size: 18px;
-  color: white;  
+  color: white;
   margin: 0 auto;
   width: 120px;
 }
@@ -355,14 +352,13 @@ button.swal2-styled.swal2-confirm {
   width: 100%;
   cursor: pointer;
   padding: 5px 10px;
-  transition: background-color .2s ease;
+  transition: background-color 0.2s ease;
   z-index: 1002;
   background-color: var(--darkGray);
   color: white;
   font-size: 18px;
-  
 }
-@media(max-width: 1024) {
+@media (max-width: 1024) {
   .cuenta {
     border-radius: unset;
   }
@@ -419,8 +415,8 @@ button.swal2-styled.swal2-confirm {
     width: 100px;
     height: 3px;
     background-color: var(--darkColor);
-    transition: .3s ease left;
-  }  
+    transition: 0.3s ease left;
+  }
   .navegacion a:nth-child(1):hover ~ .indicator {
     left: 23px !important;
     width: 72px !important;
@@ -451,7 +447,7 @@ button.swal2-styled.swal2-confirm {
     position: relative;
     width: auto;
     grid-column: 3 / 4;
-    margin: 0 auto;    
+    margin: 0 auto;
     border: 2px solid var(--darkColor);
   }
   .cuenta:hover {
@@ -489,25 +485,25 @@ button.swal2-styled.swal2-confirm {
   border-radius: 14px;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   text-align: center;
-  box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.65);
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.65);
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .login {
     width: 350px;
-    max-width: 400px; 
+    max-width: 400px;
     padding: 25px 35px;
-  }  
+  }
 }
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .login {
     transform: unset;
     bottom: unset;
     left: unset;
     height: auto;
     top: 80px;
-    right: 100px;    
+    right: 100px;
   }
   .arrow {
     position: absolute;
@@ -521,7 +517,7 @@ button.swal2-styled.swal2-confirm {
   }
 }
 
-.login img{
+.login img {
   width: 80px;
   text-align: center;
 }
@@ -550,7 +546,7 @@ button.swal2-styled.swal2-confirm {
   left: 40px;
   pointer-events: none;
   z-index: 1002;
-  transition: top .2s ease, background-color .2s ease, font-size .2s ease, color .2s ease;
+  transition: top 0.2s ease, background-color 0.2s ease, font-size 0.2s ease, color 0.2s ease;
   z-index: 1;
 }
 .form-usuario .campo label {
@@ -601,7 +597,7 @@ button.swal2-styled.swal2-confirm {
   border: 1px solid var(--green);
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:valid,
 textarea:-webkit-autofill,
@@ -645,9 +641,9 @@ form hr::after {
   margin-right: auto;
   color: #ccc;
   background-color: var(--backgroundColor);
-  font-size: 1.125rem
+  font-size: 1.125rem;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   form hr::after {
     top: -14px;
   }
@@ -671,10 +667,10 @@ form hr::after {
   left: 12px;
 }
 .facebook-btn {
-  background-color: #4267B2;
+  background-color: #4267b2;
 }
 .google-btn {
-  background-color: #DD4B39;
+  background-color: #dd4b39;
 }
 .login .btn-secondary-red {
   margin: 15px auto 0 auto;
@@ -696,7 +692,7 @@ form hr::after {
   transition: opacity 0.3s ease-in-out;
   padding: 10px 10px 15px 10px;
 }
-.opciones-cuenta a{
+.opciones-cuenta a {
   padding: 10px 10px 1px 10px;
   display: block;
   box-sizing: content-box;
@@ -710,7 +706,6 @@ form hr::after {
   color: white;
 }
 /** PopUp Perfil **/
-
 
 /** Imagen Encabezado **/
 .encabezado {
@@ -753,12 +748,12 @@ form hr::after {
   line-height: 1.5;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .titulo-principal {
     margin: 0 auto;
     font-size: 60px;
   }
-  .titulo-principal p{
+  .titulo-principal p {
     font-size: 20px;
   }
   .span {
@@ -794,17 +789,17 @@ form hr::after {
 .eventos {
   max-height: 310px;
   position: relative;
-  transition: height .5s ease-in-out;
+  transition: height 0.5s ease-in-out;
 }
 .evento {
   display: flex;
   justify-content: space-between;
   margin: 10px auto;
-  background-color: rgba(255,255,255, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 95%;
   border-radius: 10px;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .evento img {
   flex-basis: 150px;
@@ -818,12 +813,12 @@ form hr::after {
   /* text-align: left; */
   color: var(--mainColor);
 }
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .noticias {
     display: flex;
     justify-content: space-between;
     margin: 40px auto 0 auto;
-  } 
+  }
   .avisos {
     height: 400px;
     flex-basis: calc(65% - 10px);
@@ -871,7 +866,6 @@ form hr::after {
   margin: 0;
 }
 
-
 /** Horarios **/
 .horarios {
   background-color: white;
@@ -896,7 +890,7 @@ form hr::after {
   padding: 0 10px;
   text-align: center;
 }
-.card .hora{
+.card .hora {
   margin: 20px 0 10px 0;
   border-bottom: 1px solid var(--darkGray);
   display: inline-block;
@@ -934,7 +928,7 @@ form hr::after {
   font-size: 3.125rem;
 }
 
-.parallax { 
+.parallax {
   position: relative;
   height: auto;
   padding: 40px 0 40px 0;
@@ -946,9 +940,9 @@ form hr::after {
   content: ' ';
   width: 100%;
   height: 100%;
-  position: absolute;  
-  top:0;
-  left:0;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: top;
@@ -966,7 +960,6 @@ form hr::after {
 .parallax p span {
   color: var(--mainColor);
 }
-
 
 .slide-show {
   justify-content: center;
@@ -986,7 +979,6 @@ form hr::after {
 .swiper-button-next {
   color: var(--backgroundColor);
 }
-
 
 .ubicacion {
   background-color: white;
@@ -1013,7 +1005,7 @@ form hr::after {
   top: 0;
   right: 20px;
 }
-.enlace-maps i{
+.enlace-maps i {
   font-size: 1.125rem;
   margin-left: 5px;
 }
@@ -1032,7 +1024,7 @@ footer.contenedor {
   border-radius: unset;
   z-index: 1004;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   footer.contenedor {
     font-size: 12px;
   }
@@ -1048,7 +1040,7 @@ footer.contenedor {
 /* .footer-section:last-of-type {
   margin-bottom: 0;
 } */
-.footer-contacto ul{
+.footer-contacto ul {
   margin-top: 20px;
 }
 .footer-lst-element {
@@ -1056,9 +1048,8 @@ footer.contenedor {
   font-size: 12px;
   display: flex;
   align-items: center;
-
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .footer-lst-element {
     font-size: 14px;
   }
@@ -1096,7 +1087,7 @@ footer.contenedor {
 footer.contenedor hr {
   margin: 0;
 }
-.footer-enlaces a{
+.footer-enlaces a {
   width: fit-content;
 }
 .copyright {
@@ -1115,7 +1106,7 @@ footer.contenedor hr {
   text-decoration: underline;
 }
 .copyright p a:link {
-  color: white; 
+  color: white;
 }
 .copyright p a:visited {
   color: white;
@@ -1123,10 +1114,10 @@ footer.contenedor hr {
 .copyright p a:hover {
   color: var(--darkColor);
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .footer-container {
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
   .footer-contacto {
     flex: 0 0 50%;
@@ -1172,9 +1163,9 @@ footer.contenedor hr {
   border: 1px solid #ccc;
   background-color: white;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-usuario {
-    font-size: 16px
+    font-size: 16px;
   }
 }
 .form-section {
@@ -1230,6 +1221,7 @@ footer.contenedor hr {
   opacity: 0;
 }
 .form-usuario .campo i {
+  position: absolute;
   font-size: 20px;
   top: 11px;
   left: unset;
@@ -1248,7 +1240,7 @@ footer.contenedor hr {
 .input.error {
   border: 1px solid var(--mainColor);
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-usuario {
     padding: 40px;
   }
@@ -1256,7 +1248,7 @@ footer.contenedor hr {
     width: 350px;
   }
   .campo i {
-    top: 12px
+    top: 12px;
   }
 }
 /**** Registro ****/
@@ -1269,9 +1261,9 @@ footer.contenedor hr {
   width: 200px;
   height: 100vh;
   background-color: var(--darkGray);
-  box-shadow: 0px 100px 12px rgba(0,0,0,0.50);
+  box-shadow: 0px 100px 12px rgba(0, 0, 0, 0.5);
   z-index: 1003;
-  transition: width .3s ease-in-out, left 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 .sidebar .logo {
   display: block;
@@ -1308,9 +1300,8 @@ footer.contenedor hr {
 .nav-sidebar .enlace {
   justify-self: right;
   display: block;
-  margin-right: 0px
+  margin-right: 0px;
 }
-
 
 .sidebar-open {
   width: 200px;
@@ -1350,7 +1341,7 @@ footer.contenedor hr {
   width: calc(100% - 200px);
   margin-left: 200px;
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .sidebar ~ main {
     margin-left: 70px;
     width: calc(100% - 70px);
@@ -1359,12 +1350,12 @@ footer.contenedor hr {
     height: 100px;
   }
 }
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .nav-sidebar .enlace {
     margin-right: 60px;
   }
 }
-@media(min-width: 1280px) {
+@media (min-width: 1280px) {
   .sidebar-open ~ main {
     margin-left: 200px;
     width: calc(100% - 200px);
@@ -1373,10 +1364,10 @@ footer.contenedor hr {
 .sidebar-items-container {
   position: relative;
 }
-.sidebar-items-container .nav-item:nth-child(1):hover ~ .sidebar-indicator{
+.sidebar-items-container .nav-item:nth-child(1):hover ~ .sidebar-indicator {
   top: 0px !important;
 }
-.sidebar-items-container .nav-item:nth-child(2):hover ~ .sidebar-indicator{
+.sidebar-items-container .nav-item:nth-child(2):hover ~ .sidebar-indicator {
   top: 45px !important;
 }
 #perfil .sidebar-items-container .sidebar-indicator {
@@ -1387,7 +1378,7 @@ footer.contenedor hr {
 }
 .nav-link,
 .nav-link:link,
-.nav-link:visited{
+.nav-link:visited {
   display: block;
   color: white;
   padding: 10px 18px;
@@ -1414,49 +1405,31 @@ footer.contenedor hr {
   left: 0px;
   height: 45px;
   width: 200px;
-  background-color: #2E343B;
+  background-color: #2e343b;
   z-index: -1;
-  transition: top .3s ease, width 0.3s ease-in-out;
+  transition: top 0.3s ease, width 0.3s ease-in-out;
 }
 
 .sidebar ~ main {
   padding: 10px;
   transition: width 0.3s ease-in-out, margin-left 0.3s ease-in-out;
 }
-.contenedor-perfil {
-  position: relative;
-}
-.contenedor-perfil button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
+
 
 .form-usuario.form-perfil {
   padding: 0px;
   border: unset;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .sidebar ~ main {
     padding: 50px;
-  }  
-  .contenedor-perfil>div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .contenedor-perfil h1 {
-    margin: 0px;
-  }
-  .contenedor-perfil button {
-    position: static;
   }
 }
 
 /**** Perfil *****/
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .header-nosotros {
     text-align: left;
     padding-top: 40px;
@@ -1477,18 +1450,18 @@ footer.contenedor hr {
     width: 80%;
   }
 }
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   html {
     font-size: 16px;
   }
-  p{
+  p {
     font-size: 18px;
   }
   .info-precios {
     display: flex;
     justify-content: space-evenly;
   }
-  .ubicacion{
+  .ubicacion {
     padding: 40px;
   }
   .ubicacion .seccion {
@@ -1504,13 +1477,13 @@ footer.contenedor hr {
     right: 0;
   }
 }
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .contenedor {
     width: 100%;
   }
   .info-horarios {
     display: flex;
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
   .card {
     flex: 0 0 calc(25% - 40px);
@@ -1520,7 +1493,7 @@ footer.contenedor hr {
     text-align: left;
   }
   .price-card {
-    transition: all .2s;
+    transition: all 0.2s;
     flex: 0 0 calc(25% - 30px);
     margin: 0;
   }
@@ -1625,7 +1598,7 @@ footer.contenedor hr {
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   /* 1 */
   display: table;
   /* 2 */
@@ -1645,10 +1618,7 @@ footer.contenedor hr {
   /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -1673,18 +1643,18 @@ footer.contenedor hr {
     text-decoration: underline;
   }
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
   }
   pre {
     white-space: pre-wrap !important;

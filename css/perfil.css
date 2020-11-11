@@ -1,26 +1,39 @@
-.width-50 {
-  width: 50%;
+.seccion-perfil {
+  margin: 0 auto;
+  width: auto;
+  max-width: 1700px;
 }
-.width-33 {
-  width: 33.3333%;
+.contenedor-perfil {
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px;
+  position: relative;
 }
-.width-66 {
-  width: 66.6666%;
+.contenedor-perfil button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
 }
 .form-perfil {
   margin-top: 40px;
   margin-right: 0px;
 }
+.flex-3 .campo {
+  flex: 0 1 calc(33.3333% - 5px);
+}
+.flex-2 .campo {
+  flex: 0 1 calc(50% - 5px);
+}
+
 .form-perfil .campo {
   margin-bottom: 20px;
   width: auto;
 }
-.form-perfil .flex-start .campo {
-  flex: 0 1 calc(33.3333% - 5px);
+.form-perfil .campo {
   min-width: 160px;
   margin-right: 0px;
 }
-.form-perfil .flex-start .campo:last-of-type {
+.form-perfil .campo:last-of-type {
   margin-right: 0px;
 }
 .form-perfil .label-container {
@@ -40,7 +53,7 @@
   position: relative;
 }
 .input_perfil {
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 100%;
   padding: 12px 30px 12px 10px;
   border: none;
@@ -64,53 +77,83 @@
 .input-container select ~ i {
   right: 20px;
 }
-.nacimiento-alumno .flex-start .campo {
-  min-width: 140px;
+.nacimiento-alumno .mes {
+  min-width: 155px;
+}
+.nacimiento-alumno .año {
+  min-width: 102px;
+}
+.nacimiento-alumno .dia {
+  min-width: 82px;
 }
 
-.nacimiento-alumno + .flex-start .campo {
-  flex: 0 1 calc(50% - 5px);
+@media (min-width: 425px) {
+  .contenedor-perfil {
+    padding: 50px;
+  }
 }
-
 @media (min-width: 768px) {
-  .flex-start {
+  .contenedor-perfil > div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+  .contenedor-perfil h1 {
+    margin: 0px;
+  }
+  .contenedor-perfil button {
+    position: static;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .form-perfil .campo {
+    width: fit-content;
+  }
+  .cinta {
+    width: 66.6666%;
+  }
+  .campo.tutor {
+    width: 66.6666%;
+  }
+  .campo.telefono {
+    width: 33.3333%;
+  }
+}
+@media (min-width: 920px) {
+  .nacimiento-alumno {
+    width: 66.6666%;
+  }
+  .cinta {
+    width: 66.6666%;
+  }
+  .campo.tutor {
+    width: 66.6666%;
   }
 }
 @media (min-width: 1024px) {
   .form-perfil {
     margin-right: 30%;
   }
-  .flex-start {
-    justify-content: flex-start;
-  }
-  .form-perfil .flex-start .campo {
-    flex: 1 1 calc(33.3333%);
+  .form-perfil .campo {
     margin-right: 10px;
   }
 }
-@media (max-width: 1024px) {
-  .nacimiento-alumno.width-50 {
-    width: 66.6666%;
+@media (min-width: 1440px) {
+  .nacimiento-alumno {
+    width: 50%;
+  }
+  .cinta {
+    width: 50%;
+  }
+  .campo.tutor {
+    width: 50%;
+  }
+  .campo.telefono {
+    width: 33.3333%;
   }
 }
-@media (max-width: 920px) {
-  .nacimiento-alumno.width-50 {
-    width: 100%;
-  }
-  .width-50 {
-    width: 66.6666%;
-  }
-}
-@media (max-width: 767px) {
-  .width-66,
-  .width-50,
-  .width-33 {
-    width: 100%;
-  }
-}
-
 input[type='submit']:disabled {
   cursor: not-allowed;
   opacity: 0.8;
